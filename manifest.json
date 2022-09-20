@@ -3,7 +3,7 @@
   "name": "Facebook Friend Exporter",
   "description": "Get *your* data contact out of Facebook to Google Contacts or CSV, whether they want you to or not.",
   "version": "2.2.0",
-  "background_page": "background.html",
+  "background": "background.html",
   "options_page": "options.html",
   "icons": {
     "16": "img/icon16.png",
@@ -16,15 +16,15 @@
       "http://*.facebook.com/*",
       "https://*.facebook.com/*"
     ],
-    "run_at": "document_end"
-  } ],
-  "permissions": [
+    "run_at": "document_end",
+    "permissions": [
       "unlimitedStorage",
       "tabs",
-      "https://m.facebook.com/*",
-      "http://m.facebook.com/*",
-      "http://www.google.com/m8/feeds/*",
-      "https://www.google.com/accounts/OAuthAuthorizeToken",
-      "https://www.google.com/accounts/OAuthGetAccessToken"
-  ]
+      "host_permissions", [
+        "https://m.facebook.com/*",
+        "http://m.facebook.com/*",
+        "http://www.google.com/m8/feeds/*",
+        "https://www.google.com/accounts/OAuthAuthorizeToken",
+        "https://www.google.com/accounts/OAuthGetAccessToken"
+         ]]}]
 }
