@@ -1,4 +1,5 @@
 {
+  "manifest_version": 3,
   "name": "Facebook Friend Exporter",
   "description": "Get *your* data contact out of Facebook to Google Contacts or CSV, whether they want you to or not.",
   "version": "2.2.0",
